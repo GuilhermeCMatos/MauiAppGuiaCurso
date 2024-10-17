@@ -6,7 +6,9 @@
         {
             InitializeComponent();
 
+            // Definindo AppShell como a página inicial do aplicativo
             MainPage = new AppShell();
         }
     }
+
 }

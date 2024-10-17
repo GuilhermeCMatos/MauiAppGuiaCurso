@@ -1,15 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<Shell
-    x:Class="MauiAppGuiaCurso.AppShell"
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiAppGuiaCurso"
-    Shell.FlyoutBehavior="Disabled"
-    Title="MauiAppGuiaCurso">
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="MauiAppGuiaCurso.AppShell">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- Definindo rotas de navegação -->
+    <TabBar>
+        <!-- Página do 1º Ano -->
+        <ShellContent Title="1º Ano" Route="AnoPrimeiroPage" ContentTemplate="{DataTemplate local:AnoPrimeiroPage}" />
+
+        <!-- Página do 2º Ano -->
+        <ShellContent Title="2º Ano" Route="AnoSegundoPage" ContentTemplate="{DataTemplate local:AnoSegundoPage}" />
+
+        <!-- Página do 3º Ano -->
+        <ShellContent Title="3º Ano" Route="AnoTerceiroPage" ContentTemplate="{DataTemplate local:AnoTerceiroPage}" />
+    </TabBar>
 
 </Shell>
+
