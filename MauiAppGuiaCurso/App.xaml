@@ -22,12 +22,6 @@
                 <Setter Property="TextColor" Value="White" />
             </Style>
 
-            <!-- Configuração da Splash Screen -->
-            <Style TargetType="SplashScreen">
-                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}" />
-                <Setter Property="ImageSource" Value="splashscreen.png" />
-            </Style>
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>

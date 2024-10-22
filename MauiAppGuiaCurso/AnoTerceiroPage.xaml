@@ -3,6 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppGuiaCurso.AnoTerceiroPage">
 
-    <!-- Aqui vai o conteúdo da página -->
+    <!-- Personalizando o título da barra superior -->
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="DS - Terceiro Ano"
+               FontSize="32"
+               TextColor="#6959CD"
+               FontAttributes="Bold"
+               VerticalOptions="Center" />
+        </StackLayout>
+    </Shell.TitleView>
+
+    <!-- Conteúdo da página -->
+    <StackLayout>
+        <!-- Seu conteúdo aqui -->
+    </StackLayout>
 
 </ContentPage>

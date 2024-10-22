@@ -2,10 +2,8 @@ namespace MauiAppGuiaCurso;
 
 public partial class AnoSegundoPage : ContentPage
 {
-    private async void OnDesenvolvimentoWebClicked(object sender, EventArgs e)
+    public AnoSegundoPage()
     {
-        // Lógica de navegação para a página DesenvolvimentoWebPage
-        await Shell.Current.GoToAsync("DesenvolvimentoWebPage");
+        InitializeComponent();  // Certifique-se de que isso está correto
     }
-
 }

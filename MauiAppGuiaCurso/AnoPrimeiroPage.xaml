@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppGuiaCurso.AnoPrimeiroPage">
+             x:Class="MauiAppGuiaCurso.AnoPrimeiroPage"
+             Shell.NavBarIsVisible="True">
 
-    <!-- Aqui vai o conteúdo da página -->
+    <!-- Personalizando o título da barra superior -->
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="INF - Primeiro Ano"
+                   FontSize="32"
+                   TextColor="#6959CD"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center" />
+        </StackLayout>
+    </Shell.TitleView>
+
+    <!-- Conteúdo da página -->
+    <StackLayout>
+        <!-- Seu conteúdo aqui -->
+    </StackLayout>
 
 </ContentPage>
+

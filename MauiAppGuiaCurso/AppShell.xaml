@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:MauiAppGuiaCurso"
        x:Class="MauiAppGuiaCurso.AppShell">
 
     <!-- Definindo rotas de navegação -->
@@ -14,6 +15,4 @@
         <!-- Página do 3º Ano -->
         <ShellContent Title="3º Ano" Route="AnoTerceiroPage" ContentTemplate="{DataTemplate local:AnoTerceiroPage}" />
     </TabBar>
-
 </Shell>
-
