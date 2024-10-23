@@ -9,16 +9,43 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Label Text="DS - Segundo Ano"
                    FontSize="32"
-                   TextColor="#6959CD"
+                   TextColor="{StaticResource PrimaryColor}"
                    FontAttributes="Bold"
                    VerticalOptions="Center" />
         </StackLayout>
     </Shell.TitleView>
 
     <!-- Conteúdo da página -->
-    <StackLayout>
-        <!-- Seu conteúdo aqui -->
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Sessão 1: HTML Complexo e PHP -->
+            <Label Text="HTML Avançado e PHP"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="No segundo ano, o foco no desenvolvimento web aumenta. Os alunos criam sites mais complexos e dinâmicos, combinando HTML e CSS com PHP para criar aplicações web funcionais e interativas."
+                   FontSize="18"
+                   TextColor="Black" />
+
+            <!-- Sessão 2: MySQL e Banco de Dados Avançado -->
+            <Label Text="MySQL e Banco de Dados Avançado"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="O entendimento sobre banco de dados se aprofunda com o MySQL. Os alunos aprendem a trabalhar com consultas complexas, relacionamento de tabelas e otimização de dados para suas aplicações."
+                   FontSize="18"
+                   TextColor="Black" />
+
+            <!-- Sessão 3: Aplicativos com C# e MAUI -->
+            <Label Text="Desenvolvimento de Aplicativos com C# e MAUI"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="Além do desenvolvimento web, o segundo ano introduz o C# e o MAUI, onde os alunos começam a criar aplicativos multi-plataforma, como o próprio exemplo deste aplicativo, utilizando técnicas e ferramentas profissionais."
+                   FontSize="18"
+                   TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
 
 
 </ContentPage>

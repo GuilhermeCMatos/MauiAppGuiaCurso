@@ -8,15 +8,42 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Label Text="DS - Terceiro Ano"
                FontSize="32"
-               TextColor="#6959CD"
+               TextColor="{StaticResource PrimaryColor}"
                FontAttributes="Bold"
                VerticalOptions="Center" />
         </StackLayout>
     </Shell.TitleView>
 
     <!-- Conteúdo da página -->
-    <StackLayout>
-        <!-- Seu conteúdo aqui -->
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Sessão 1: TCC -->
+            <Label Text="TCC - Projeto Final"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="No terceiro ano, os alunos começam a desenvolver seu Trabalho de Conclusão de Curso (TCC), um projeto final que durará até o fim do curso. O tema do TCC é livre, mas deve estar relacionado ao curso de Desenvolvimento de Sistemas. Esse projeto permite que os alunos apliquem todo o conhecimento adquirido ao longo dos três anos."
+                   FontSize="18"
+                   TextColor="Black" />
+
+            <!-- Sessão 2: Arduino e Sistemas Embarcados -->
+            <Label Text="Arduino e Sistemas Embarcados"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="Os alunos são introduzidos ao estudo de sistemas embarcados utilizando Arduino, aprendendo a criar dispositivos eletrônicos que interagem com o mundo físico. Essa área abre um leque de possibilidades para inovações e aplicações no campo da automação."
+                   FontSize="18"
+                   TextColor="Black" />
+
+            <!-- Sessão 3: Gerenciamento de Softwares -->
+            <Label Text="Gerenciamento de Softwares"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="Por fim, os alunos aprendem sobre o gerenciamento de softwares, compreendendo como utilizar ferramentas para organizar e gerenciar projetos. Eles também aprendem como adaptar softwares para o mercado, aplicando metodologias ágeis e boas práticas de desenvolvimento."
+                   FontSize="18"
+                   TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>

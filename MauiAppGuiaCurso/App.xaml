@@ -7,7 +7,7 @@
 
             <!-- Cores principais -->
             <!-- Roxo -->
-            <Color x:Key="PrimaryColor">#6200EE</Color>
+            <Color x:Key="PrimaryColor">#6959CD</Color>
             <!-- Azul Claro -->
             <Color x:Key="SecondaryColor">#03DAC5</Color>
 

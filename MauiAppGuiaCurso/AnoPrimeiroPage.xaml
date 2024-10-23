@@ -9,16 +9,43 @@
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Label Text="INF - Primeiro Ano"
                    FontSize="32"
-                   TextColor="#6959CD"
+                   TextColor= "{StaticResource PrimaryColor}"
                    FontAttributes="Bold"
                    VerticalOptions="Center" />
         </StackLayout>
     </Shell.TitleView>
 
     <!-- Conteúdo da página -->
-    <StackLayout>
-        <!-- Seu conteúdo aqui -->
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Sessão 1: Lógica e VisualG 3.0 -->
+            <Label Text="Início no Mundo da Lógica e VisualG 3.0"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="No primeiro ano, os alunos começam a explorar o raciocínio lógico e a programação estruturada através da ferramenta VisualG 3.0. É o ponto de partida para entender como os algoritmos funcionam e como resolver problemas com lógica."
+                   FontSize="18"
+                   TextColor="Black" />
+
+            <!-- Sessão 2: HTML, CSS e Web Design -->
+            <Label Text="HTML, CSS e Web Design"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="Além da lógica, os alunos iniciam no desenvolvimento web com HTML e CSS, criando suas primeiras páginas. A introdução ao design gráfico é feita com ferramentas como Canva e CorelDRAW, para criar elementos visuais atraentes."
+                   FontSize="18"
+                   TextColor="Black" />
+
+            <!-- Sessão 3: Introdução ao Banco de Dados -->
+            <Label Text="Introdução ao Banco de Dados"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="{StaticResource PrimaryColor}" />
+            <Label Text="Os fundamentos do Banco de Dados também começam a ser explorados, ensinando como armazenar, manipular e gerenciar dados de forma eficiente, preparando os alunos para os projetos futuros."
+                   FontSize="18"
+                   TextColor="Black" />
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
 
