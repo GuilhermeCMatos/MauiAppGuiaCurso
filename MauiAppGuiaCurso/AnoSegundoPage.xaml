@@ -16,36 +16,37 @@
     </Shell.TitleView>
 
     <!-- Conteúdo da página -->
-    <ScrollView>
-        <StackLayout Padding="20">
-            <!-- Sessão 1: HTML Complexo e PHP -->
-            <Label Text="HTML Avançado e PHP"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="No segundo ano, o foco no desenvolvimento web aumenta. Os alunos criam sites mais complexos e dinâmicos, combinando HTML e CSS com PHP para criar aplicações web funcionais e interativas."
-                   FontSize="18"
-                   TextColor="Black" />
+    <Grid Padding="20" RowSpacing="20" ColumnSpacing="20">
+        <!-- Definindo três colunas para os três cards -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-            <!-- Sessão 2: MySQL e Banco de Dados Avançado -->
-            <Label Text="MySQL e Banco de Dados Avançado"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="O entendimento sobre banco de dados se aprofunda com o MySQL. Os alunos aprendem a trabalhar com consultas complexas, relacionamento de tabelas e otimização de dados para suas aplicações."
-                   FontSize="18"
-                   TextColor="Black" />
+        <!-- Card 1 -->
+        <Frame Grid.Column="0" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="HTML Avançado e PHP" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="No segundo ano, o foco no desenvolvimento web aumenta significativamente. Os alunos desenvolvem sites mais complexos e dinâmicos, combinando HTML e CSS com PHP, aprendendo a criar aplicações web que interagem com bases de dados e oferecem funcionalidades avançadas." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
 
-            <!-- Sessão 3: Aplicativos com C# e MAUI -->
-            <Label Text="Desenvolvimento de Aplicativos com C# e MAUI"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="Além do desenvolvimento web, o segundo ano introduz o C# e o MAUI, onde os alunos começam a criar aplicativos multi-plataforma, como o próprio exemplo deste aplicativo, utilizando técnicas e ferramentas profissionais."
-                   FontSize="18"
-                   TextColor="Black" />
-        </StackLayout>
-    </ScrollView>
+        <!-- Card 2 -->
+        <Frame Grid.Column="1" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="MySQL e Banco de Dados" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="O conhecimento em banco de dados é aprimorado com o MySQL. Os alunos aprendem a trabalhar com consultas complexas, relacionamentos de tabelas e otimização de dados, garantindo que suas aplicações web funcionem de maneira rápida e eficiente." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
 
+        <!-- Card 3 -->
+        <Frame Grid.Column="2" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="Desenv. de Apps com C# e MAUI" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="Além do desenvolvimento web, os alunos são introduzidos ao desenvolvimento de aplicativos multi-plataforma utilizando C# e MAUI. Eles aprendem a criar aplicativos robustos e interativos, capazes de rodar em diferentes dispositivos, como o exemplo deste próprio aplicativo." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
+    </Grid>
 
 </ContentPage>

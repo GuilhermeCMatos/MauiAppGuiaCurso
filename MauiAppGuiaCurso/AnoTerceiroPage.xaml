@@ -15,35 +15,37 @@
     </Shell.TitleView>
 
     <!-- Conteúdo da página -->
-    <ScrollView>
-        <StackLayout Padding="20">
-            <!-- Sessão 1: TCC -->
-            <Label Text="TCC - Projeto Final"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="No terceiro ano, os alunos começam a desenvolver seu Trabalho de Conclusão de Curso (TCC), um projeto final que durará até o fim do curso. O tema do TCC é livre, mas deve estar relacionado ao curso de Desenvolvimento de Sistemas. Esse projeto permite que os alunos apliquem todo o conhecimento adquirido ao longo dos três anos."
-                   FontSize="18"
-                   TextColor="Black" />
+    <Grid Padding="20" RowSpacing="20" ColumnSpacing="20">
+        <!-- Definindo três colunas para os três cards -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-            <!-- Sessão 2: Arduino e Sistemas Embarcados -->
-            <Label Text="Arduino e Sistemas Embarcados"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="Os alunos são introduzidos ao estudo de sistemas embarcados utilizando Arduino, aprendendo a criar dispositivos eletrônicos que interagem com o mundo físico. Essa área abre um leque de possibilidades para inovações e aplicações no campo da automação."
-                   FontSize="18"
-                   TextColor="Black" />
+        <!-- Card 1 -->
+        <Frame Grid.Column="0" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="TCC - Projeto Final" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="No terceiro ano, os alunos começam a desenvolver seu Trabalho de Conclusão de Curso (TCC), um projeto final que durará até o fim do curso. O tema do TCC é livre, mas deve estar relacionado ao curso de Desenvolvimento de Sistemas. Esse projeto permite que os alunos apliquem todo o conhecimento adquirido ao longo dos três anos." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
 
-            <!-- Sessão 3: Gerenciamento de Softwares -->
-            <Label Text="Gerenciamento de Softwares"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="Por fim, os alunos aprendem sobre o gerenciamento de softwares, compreendendo como utilizar ferramentas para organizar e gerenciar projetos. Eles também aprendem como adaptar softwares para o mercado, aplicando metodologias ágeis e boas práticas de desenvolvimento."
-                   FontSize="18"
-                   TextColor="Black" />
-        </StackLayout>
-    </ScrollView>
+        <!-- Card 2 -->
+        <Frame Grid.Column="1" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="Arduino e Sistemas Embarcados" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="Os alunos são introduzidos ao estudo de sistemas embarcados utilizando Arduino, aprendendo a criar dispositivos eletrônicos que interagem com o mundo físico. Essa área abre um leque de possibilidades para inovações e aplicações no campo da automação." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
 
+        <!-- Card 3 -->
+        <Frame Grid.Column="2" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="Gerenciamento de Softwares" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="Por fim, os alunos aprendem sobre o gerenciamento de softwares, compreendendo como utilizar ferramentas para organizar e gerenciar projetos. Eles também aprendem como adaptar softwares para o mercado, aplicando metodologias ágeis e boas práticas de desenvolvimento." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
+    </Grid>
+    
 </ContentPage>

@@ -16,36 +16,39 @@
     </Shell.TitleView>
 
     <!-- Conteúdo da página -->
-    <ScrollView>
-        <StackLayout Padding="20">
-            <!-- Sessão 1: Lógica e VisualG 3.0 -->
-            <Label Text="Início no Mundo da Lógica e VisualG 3.0"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="No primeiro ano, os alunos começam a explorar o raciocínio lógico e a programação estruturada através da ferramenta VisualG 3.0. É o ponto de partida para entender como os algoritmos funcionam e como resolver problemas com lógica."
-                   FontSize="18"
-                   TextColor="Black" />
+    <Grid Padding="20" RowSpacing="20" ColumnSpacing="20">
+        <!-- Definindo três colunas para os três cards -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-            <!-- Sessão 2: HTML, CSS e Web Design -->
-            <Label Text="HTML, CSS e Web Design"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="Além da lógica, os alunos iniciam no desenvolvimento web com HTML e CSS, criando suas primeiras páginas. A introdução ao design gráfico é feita com ferramentas como Canva e CorelDRAW, para criar elementos visuais atraentes."
-                   FontSize="18"
-                   TextColor="Black" />
+        <!-- Card 1 -->
+        <Frame Grid.Column="0" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="Início de Lógica e VisualG 3.0" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="No primeiro ano, os alunos começam a explorar o raciocínio lógico e a programação estruturada através da ferramenta VisualG 3.0. Esse é o ponto de partida para entender como os algoritmos funcionam e como resolver problemas com lógica." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
 
-            <!-- Sessão 3: Introdução ao Banco de Dados -->
-            <Label Text="Introdução ao Banco de Dados"
-                   FontAttributes="Bold"
-                   FontSize="24"
-                   TextColor="{StaticResource PrimaryColor}" />
-            <Label Text="Os fundamentos do Banco de Dados também começam a ser explorados, ensinando como armazenar, manipular e gerenciar dados de forma eficiente, preparando os alunos para os projetos futuros."
-                   FontSize="18"
-                   TextColor="Black" />
-        </StackLayout>
-    </ScrollView>
+
+        <!-- Card 2 -->
+        <Frame Grid.Column="1" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="HTML, CSS e Web Design" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="Além da lógica, os alunos são introduzidos ao desenvolvimento web com HTML e CSS, criando suas primeiras páginas na web. A introdução ao design gráfico é feita com ferramentas como Canva e CorelDRAW, permitindo que criem elementos visuais atraentes e compreendam os princípios de design." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Card 3 -->
+        <Frame Grid.Column="2" BackgroundColor="{StaticResource SecondaryColor}" CornerRadius="10" HasShadow="True">
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="Introdução ao Banco de Dados" FontAttributes="Bold" FontSize="24" TextColor="White" HorizontalOptions="Center" />
+                <Label Text="O curso também aborda os fundamentos do Banco de Dados, ensinando os alunos a armazenar, manipular e gerenciar dados de forma eficiente. Esse conhecimento é essencial para projetos futuros e desenvolvimento de sistemas complexos." FontSize="18" TextColor="White" />
+            </StackLayout>
+        </Frame>
+    </Grid>
 
 </ContentPage>
 
